@@ -13,3 +13,112 @@ p {
     color: #374151;
     font-size: 18px;
 }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #111827;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav a {
+    color: #d1d5db;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+.hero {
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #111827;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 15px;
+}
+.services {
+    padding: 80px 60px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #111827;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f9fafb;
+    padding: 30px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #374151;
+    font-size: 16px;
+}
+.contact {
+    padding: 80px 20px;
+    background-color: #f3f4f6;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #111827;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #374151;
+}
+
+.contact-info {
+    margin-top: 25px;
+}
+
+.contact-info p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+.footer {
+    background-color: #111827;
+    color: #d1d5db;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+
