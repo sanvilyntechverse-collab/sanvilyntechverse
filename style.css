@@ -335,37 +335,86 @@ body {
   transform: translateY(-6px);
   border-color: var(--accent);
 }
-/* HERO ANIMATED DIAGRAM – LARGE VERSION */
+/* HERO RIGHT SIDE VISUAL (ENLARGED) */
 .hero-visual {
-  width: 520px;              /* 👈 INCREASED SIZE */
-  height: 360px;
-  position: relative;
-  margin-left: auto;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.25); /* overall enlargement */
 }
 
-.screen {
-  width: 100%;
-  height: 260px;
-  border: 3px solid #7c4dff;
+/* Main screen box */
+.chart-box {
+  width: 420px;     /* ⬅️ increased */
+  height: 260px;    /* ⬅️ increased */
+  border: 2.5px solid #7c3aed;
   border-radius: 18px;
   position: relative;
-  padding: 40px;
-  animation: float 6s ease-in-out infinite;
+  background: #ffffff;
 }
 
 /* Bars */
-.bar {
-  width: 16px;
-  background: linear-gradient(180deg, #7c4dff, #b69cff);
-  border-radius: 8px;
+.chart-box .bar {
   position: absolute;
   bottom: 40px;
-  animation: grow 2.5s ease-in-out infinite;
+  width: 14px;
+  border-radius: 6px;
+  animation: grow 1.8s infinite ease-in-out;
 }
 
-.bar1 { height: 90px; left: 80px; animation-delay: 0s; }
-.bar2 { height: 140px; left: 120px; animation-delay: .4s; }
-.bar3 { height: 110px; left: 160px; animation-delay: .8s; }
+.bar1 {
+  left: 40px;
+  height: 90px;
+  background: #7c3aed;
+}
+
+.bar2 {
+  left: 70px;
+  height: 130px;
+  background: #a78bfa;
+  animation-delay: 0.2s;
+}
+
+.bar3 {
+  left: 100px;
+  height: 70px;
+  background: #c4b5fd;
+  animation-delay: 0.4s;
+}
+
+/* Floating dot */
+.chart-box .dot {
+  position: absolute;
+  right: 90px;
+  top: 90px;
+  width: 10px;
+  height: 10px;
+  background: #7c3aed;
+  border-radius: 50%;
+  animation: float 2.5s infinite ease-in-out;
+}
+
+/* Bottom base line */
+.base-line {
+  margin-top: 18px;
+  width: 220px;     /* ⬅️ increased */
+  height: 14px;
+  background: #e9d5ff;
+  border-radius: 10px;
+}
+
+/* Animations */
+@keyframes grow {
+  0%, 100% { transform: scaleY(0.9); }
+  50% { transform: scaleY(1.1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
 
 /* Floating dot */
 .dot {
