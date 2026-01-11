@@ -1,138 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8" />
-  <title>Sanvilyn Techverse</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanvilyn Techverse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+<body id="home">
+    <nav>
+        <div class="logo-group">
+            <div class="logo">
+                <h2 class="main-brand">Sanvilyn Techverse</h2>
+                <p class="powerful-slogan">"we don't chase likes, we build growth"</p>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+        </div>
+    </nav>
 
-<body>
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-text-center">
+                <h1>Grow Your Brand with<br>Sanvilyn Techverse</h1>
+                <p class="highlight-quote">"We provide digital marketing and technology solutions that drive real results. Let's build a better digital future together."</p>
+                
+                <div class="spacer"></div>
+                
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScRhI5HZL-K8cuHYG-nw8a6tyUaPi3Npp90wH5vQMuZXdXXIg/viewform?usp=header" target="_blank" class="cta-btn">Book your free consultation</a>
+            </div>
+            
+            <div class="hero-visual-large">
+                <div class="computer-wrapper">
+                    <svg viewBox="0 0 200 120" class="computer-svg">
+                        <defs>
+                            <clipPath id="screen-inner">
+                                <rect x="18" y="12" width="164" height="90" rx="4" />
+                            </clipPath>
+                        </defs>
+                        <rect x="10" y="5" width="180" height="110" rx="8" class="comp-border" fill="none" stroke-width="2"/>
+                        <rect x="18" y="12" width="164" height="90" rx="4" class="comp-screen" fill="currentColor" opacity="0.05"/>
+                        <g clip-path="url(#screen-inner)">
+                            <path class="graph-area" d="M20,100 L50,80 L80,85 L110,60 L140,65 L175,30 L175,100 Z" fill="var(--accent-color)" opacity="0.2" />
+                            <polyline class="graph-line" points="20,100 50,80 80,85 110,60 140,65 175,30" fill="none" stroke="var(--accent-color)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<!-- subtle purple flowing lines -->
-<div class="flow-lines"></div>
+    <section id="services" class="services">
+        <h3 class="section-title">Our Services</h3>
+        <div class="main-grid">
+            <div class="hover-card">
+                <h4>SEO Optimization</h4>
+                <p class="service-quote">"Be found where your customers are searching."</p>
+                <p>Improve search rankings and attract consistent organic traffic to your brand.</p>
+            </div>
+            <div class="hover-card">
+                <h4>Social Media Ads</h4>
+                <p class="service-quote">"Turn scrollers into high-value customers."</p>
+                <p>Targeted ad campaigns designed to maximize ROI and scale your brand fast.</p>
+            </div>
+            <div class="hover-card">
+                <h4>Pay Per Click</h4>
+                <p class="service-quote">"Instant visibility for immediate results."</p>
+                <p>Precision-targeted PPC strategies that put your brand at the top of results.</p>
+            </div>
+            <div class="hover-card">
+                <h4>Reputation Management</h4>
+                <p class="service-quote">"Your brand's integrity is your greatest asset."</p>
+                <p>Monitor and improve how the world perceives your business online.</p>
+            </div>
+            <div class="hover-card">
+                <h4>Social Media Marketing</h4>
+                <p class="service-quote">"Build a community, not just a following."</p>
+                <p>Engagement-driven strategies to keep your brand relevant and loved.</p>
+            </div>
+            <div class="hover-card">
+                <h4>Website Development</h4>
+                <p class="service-quote">"Your digital storefront deserves the best."</p>
+                <p>High-performance, modern websites built to convert visitors into leads.</p>
+            </div>
+        </div>
+    </section>
 
-<header class="header">
-  <div class="logo">
-    <h1>Sanvilyn Techverse</h1>
-    <p>we don’t chase likes, we build growth</p>
-  </div>
+    <section class="why-choose">
+        <h3 class="section-title">Why Choose Sanvilyn Techverse?</h3>
+        <div class="main-grid">
+            <div class="hover-card">
+                <h4>Growth Focused</h4>
+                <p>We prioritize your business expansion and actual revenue growth above all else.</p>
+            </div>
+            <div class="hover-card">
+                <h4>Data Driven</h4>
+                <p>Every decision we make is guided by analytics to ensure the highest success rate.</p>
+            </div>
+            <div class="hover-card">
+                <h4>Client First</h4>
+                <p>Your success is our priority, and we work as a dedicated extension of your team.</p>
+            </div>
+            <div class="hover-card">
+                <h4>Innovation Led</h4>
+                <p>We use the latest technology and marketing trends to keep you ahead of competitors.</p>
+            </div>
+            <div class="hover-card">
+                <h4>Full Transparency</h4>
+                <p>You get clear, regular updates on exactly how your campaigns are performing.</p>
+            </div>
+            <div class="hover-card">
+                <h4>Expert Support</h4>
+                <p>Dedicated professionals available to guide you through every step of your journey.</p>
+            </div>
+        </div>
+    </section>
 
-  <nav class="nav">
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-    <button id="themeToggle">🌙</button>
-  </nav>
-</header>
+    <footer id="contact">
+        <div class="contact-info">
+            <p>Email: sanvilyntechverse@gmail.com | Phone: +91 73586 00108</p>
+            <p>Location: Coimbatore, Tamil Nadu</p>
+        </div>
+        <p class="copy">© 2026 Sanvilyn Techverse. All rights reserved.</p>
+    </footer>
 
-<!-- HERO -->
-<section id="home" class="hero">
-  <div class="hero-inner">
-
-    <div class="hero-text">
-      <h2>
-        Grow Your Brand with<br />
-        Sanvilyn Techverse
-      </h2>
-
-      <p class="hero-sub">
-        We provide digital marketing and technology solutions that drive real results.
-      </p>
-
-      <p class="hero-desc">
-        Let’s build a better digital future together. Register now and our team will reach out to you.
-      </p>
-
-      <a
-  href=https://docs.google.com/forms/d/e/1FAIpQLScRhI5HZL-K8cuHYG-nw8a6tyUaPi3Npp90wH5vQMuZXdXXIg/viewform?usp=header
-  target="_blank"
-  rel="noopener noreferrer"
-  class="primary-btn"
->
-  Book your free consultation
-</a>
-
-    </div>
-
-    <!-- animated engagement graphic -->
-    <div class="hero-graphic">
-  <div class="desk">
-    <div class="monitor">
-      <div class="chart"></div>
-      <div class="cursor"></div>
-    </div>
-    <div class="keyboard"></div>
-  </div>
-</div>
-
-
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="services">
-  <h2>Our Services</h2>
-
-  <div class="services-grid">
-    <div class="service-card">
-      <h3>Digital Marketing</h3>
-      <p>Strategic campaigns to grow your online presence and leads.</p>
-    </div>
-
-    <div class="service-card">
-      <h3>SEO Optimization</h3>
-      <p>Improve search rankings and attract organic traffic.</p>
-    </div>
-
-    <div class="service-card">
-      <h3>Social Media Marketing</h3>
-      <p>Build brand awareness and engagement across platforms.</p>
-    </div>
-
-    <div class="service-card">
-      <h3>Website Development</h3>
-      <p>Modern, responsive websites built for performance.</p>
-
-      
-    </div>
-  </div>
-</section>
-
-<<section class="why-choose">
-  <h2>Why Choose Sanvilyn Techverse?</h2>
-
-  <div class="why-grid">
-    <div class="why-card">
-      <h3>Growth Focused</h3>
-      <p>We focus on measurable growth, not vanity metrics.</p>
-    </div>
-
-    <div class="why-card">
-      <h3>Data Driven</h3>
-      <p>Every decision is backed by analytics and insights.</p>
-    </div>
-
-    <div class="why-card">
-      <h3>Client First</h3>
-      <p>Your success is our priority from day one.</p>
-    </div>
-  </div>
-</section>
-
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <h2></h2>
-  <p>Email: sanvilyntechverse@gmail.com</p>
-  <p>Phone: +91 73586 00108</p>
-  <p>Location: Coimbatore,TamilNadu</p>
-</section>
-
-<footer class="footer">
-  © 2026 Sanvilyn Techverse. All rights reserved.
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
