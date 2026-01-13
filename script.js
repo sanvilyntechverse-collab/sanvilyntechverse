@@ -6,8 +6,13 @@ themeToggle.addEventListener('click', () => {
     const currentTheme = htmlElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
     htmlElement.setAttribute('data-theme', newTheme);
-    icon.classList.toggle('fa-sun');
-    icon.classList.toggle('fa-moon');
+    
+    if (newTheme === 'dark') {
+        icon.classList.replace('fa-moon', 'fa-sun');
+    } else {
+        icon.classList.replace('fa-sun', 'fa-moon');
+    }
+    
     localStorage.setItem('theme', newTheme);
 });
 
