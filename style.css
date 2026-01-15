@@ -89,3 +89,100 @@ nav { display: flex; justify-content: space-between; align-items: flex-start; pa
     }
 }
 footer { background: var(--footer-bg); color: white; padding: 80px 5%; text-align: center; margin-top: 80px; }
+/* --- CRITICAL MOBILE VIEW OPTIMIZATION --- */
+
+/* This triggers for tablets and phones */
+@media (max-width: 1024px) {
+    .main-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        gap: 20px;
+        padding: 40px 5%;
+    }
+}
+
+/* This triggers for mobile phones (Width < 768px) */
+@media (max-width: 768px) {
+    /* 1. Fix Navigation Overlap */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 5%;
+        gap: 15px;
+    }
+
+    .logo-group {
+        margin-left: 0; /* Centers logo */
+    }
+
+    .main-brand {
+        font-size: 1.8rem; /* Scaled down logo text */
+    }
+
+    .powerful-slogan {
+        font-size: 0.9rem; /* Scaled down slogan */
+    }
+
+    .nav-links {
+        padding-top: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        margin: 0 8px;
+        font-size: 0.85rem;
+    }
+
+    .theme-btn {
+        margin-left: 10px;
+    }
+
+    /* 2. Scale Hero Section */
+    .hero {
+        padding: 40px 5% 20px;
+    }
+
+    .hero-text-center h1 {
+        font-size: 2.2rem; /* Prevent text clipping */
+        line-height: 1.2;
+    }
+
+    .highlight-quote {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .cta-btn {
+        width: 90%; /* Easy to tap on mobile */
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+
+    /* 3. Fix Grid Alignment (Stacking) */
+    .main-grid {
+        grid-template-columns: 1fr; /* Force 1 column per row */
+        padding: 30px 10%;
+        gap: 25px;
+    }
+
+    .hover-card {
+        min-height: auto;
+        padding: 30px 20px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-top: 50px;
+    }
+
+    /* 4. Fix Footer Text */
+    footer {
+        padding: 50px 5%;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+}
